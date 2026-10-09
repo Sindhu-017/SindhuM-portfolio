@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sindhu M - Electrical and Electronic Engineer & Aspiring Developer. Portfolio showcasing Python, Java, web development, and engineering projects.">
+    <title>Sindhu M | Electrical & Electronic Engineer & Aspiring Developer</title>
+    <!-- Pixel-Art & Modern Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Mobile Top Header Bar (Shown only on smaller screens) -->
+    <div class="mobile-topbar" aria-label="Mobile Header">
+        <a href="#hero" class="mobile-brand">
+            <img src="profile.jpg" alt="Sindhu M Avatar" class="mobile-brand-img">
+            <span>Sindhu M</span>
+        </a>
+        <button id="mobile-menu-toggle" class="mobile-nav-toggle" type="button" aria-label="Toggle navigation menu"
+            aria-expanded="false">
+            <span>☰ MENU</span>
+        </button>
+    </div>
+
+    <!-- Mobile Navigation Backdrop Overlay -->
+    <div id="mobile-overlay" class="mobile-overlay" aria-hidden="true"></div>
+
+    <!-- ==========================================================================
+         Fixed Vertical Left Navigation Bar (Pixel-Art Blue & White Theme)
+         ========================================================================== -->
+    <aside class="sidebar-navbar" id="sidebar-navbar" aria-label="Main Navigation">
+        <!-- Brand & Profile Avatar -->
+        <div class="sidebar-brand">
+            <a href="#hero" class="brand-link">
+                <div class="brand-avatar-box">
+                    <img src="profile.jpg" alt="Sindhu M Portrait">
+                </div>
+                <div>
+                    <div>Sindhu M</div>
+                    <span class="brand-tag">EEE & Developer</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Vertical Navigation Menu Links with Pixel-Art Icons -->
+        <nav aria-label="Sidebar Menu">
+            <ul class="nav-menu-list">
+                <!-- 1. Home -->
+                <li class="nav-item">
+                    <a href="#hero" class="nav-link active" aria-current="page">
+                        <span class="nav-icon" aria-hidden="true">
+                            <svg viewBox="0 0 16 16">
+                                <path d="M8 1L1 7v8h5v-4h4v4h5V7L8 1z" />
+                            </svg>
+                        </span>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+                <!-- 2. About Me -->
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <span class="nav-icon" aria-hidden="true">
+                            <svg viewBox="0 0 16 16">
+                                <path d="M8 2a3 3 0 100 6 3 3 0 000-6zM3 13c0-2.5 2.5-4 5-4s5 1.5 5 4v1H3v-1z" />
+                            </svg>
+                        </span>
+                        <span>About Me</span>
+                    </a>
+                </li>
+
+                <!-- 3. Skills -->
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">
+                        <span class="nav-icon" aria-hidden="true">
+                            <svg viewBox="0 0 16 16">
+                                <path d="M9 1L3 9h4l-1 6 7-9H9l1-5z" />
+                            </svg>
+                        </span>
+                        <span>Skills</span>
+                    </a>
+                </li>
+
+                <!-- 4. Timeline -->
+                <li class="nav-item">
+                    <a href="#timeline" class="nav-link">
+                        <span class="nav-icon" aria-hidden="true">
+                            <svg viewBox="0 0 16 16">
+                                <path d="M8 1a7 7 0 100 14A7 7 0 008 1zm1 8H5V7h3V3h2v6z" />
+                            </svg>
+                        </span>
+                        <span>Timeline</span>
+                    </a>
+                </li>
+
+                <!-- 5. Projects -->
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">
+                        <span class="nav-icon" aria-hidden="true">
+                            <svg viewBox="0 0 16 16">
+                                <path d="M2 3h4l2 2h6v8H2V3zm2 4v4h8V7H4z" />
+                            </svg>
+                        </span>
+                        <span>Projects</span>
+                    </a>
+                </li>
+
+                <!-- 6. Testimonials -->
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link">
+                        <span class="nav-icon" aria-hidden="true">
+                            <svg viewBox="0 0 16 16">
+                                <path d="M2 3h12v8H6l-4 3V3zm3 3v2h2V6H5zm4 0v2h2V6H9z" />
+                            </svg>
+                        </span>
+                        <span>Testimonials</span>
+                    </a>
+                </li>
+
+                <!-- 7. Chat -->
+                <li class="nav-item">
+                    <a href="#chat" class="nav-link">
+                        <span class="nav-icon" aria-hidden="true">
+                            <svg viewBox="0 0 16 16">
+                                <path d="M1 2h14v9H9l-4 3v-3H1V2zm3 4h8v1H4V6zm0 2h5v1H4V8z" />
+                            </svg>
+                        </span>
+                        <span>Chat</span>
+                    </a>
+                </li>
+
+                <!-- 8. Contact -->
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <span class="nav-icon" aria-hidden="true">
+                            <svg viewBox="0 0 16 16">
+                                <path d="M1 3h14v10H1V3zm2 2v6h10V5l-5 4-5-4z" />
+                            </svg>
+                        </span>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Sidebar Footer & Night Mode Toggle Button -->
+        <div class="sidebar-footer">
+            <button id="theme-toggle" class="theme-toggle-btn" type="button" aria-label="Toggle dark/light mode">
+                <span id="theme-icon">🌙</span>
+                <span id="theme-text">NIGHT MODE</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- ==========================================================================
+         Main Content Wrapper (Offset by sidebar width on desktop)
+         ========================================================================== -->
+    <div class="main-wrapper">
+        <main>
+
+            <!-- ==================================================================
+                 1. Hero Section (Pixel-Art Modern Fusion with Profile Showcase)
+                 ================================================================== -->
+            <section id="hero" class="hero-section" aria-labelledby="hero-title">
+                <!-- Ambient Pixel Grid Background Overlay -->
+                <div class="hero-pixel-bg-grid" aria-hidden="true"></div>
+
+                <div class="hero-container">
+                    <!-- Left Column: Introduction & Call-to-Actions -->
+                    <div class="hero-content">
+
+                        <!-- Pixel Role Badge -->
+                        <div class="pixel-role-badge">
+                            <span class="pixel-pulse-dot" aria-hidden="true"></span>
+                            Electrical & Electronics | Aspiring Developer
+                        </div>
+
+                        <!-- Main Welcome Heading -->
+                        <h1 id="hero-title" class="hero-title">
+                            Hello, I'm <br>
+                            <span class="highlight">Sindhu M</span><span class="pixel-cursor" aria-hidden="true"></span>
+                        </h1>
+
+                        <!-- Short Tagline -->
+                        <p class="hero-tagline">
+                            Building creative solutions with code.
+                        </p>
+
+                        <!-- Supporting Description -->
+                        <p class="hero-description">
+                            Passionate Electrical & Electronic Engineer and aspiring developer. Interested in Python,
+                            Java, web development, and creating creative, efficient, and user-friendly applications.
+                        </p>
+
+                        <!-- Interactive Pixel CTA Buttons -->
+                        <div class="hero-actions">
+                            <a href="#projects" class="pixel-btn pixel-btn-primary">
+                                <span>▶</span> View My Projects
+                            </a>
+                            <a href="#contact" class="pixel-btn pixel-btn-secondary">
+                                <span>✉</span> Contact Me
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Pixel-Art Decorative Showcase Card with Photo -->
+                    <div class="hero-visual" aria-hidden="true">
+                        <!-- Floating Pixel Art Sparks -->
+                        <div class="pixel-spark spark-1"></div>
+                        <div class="pixel-spark spark-2"></div>
+
+                        <!-- Pixelated Terminal / Circuit Window with Photo -->
+                        <div class="pixel-art-card">
+                            <div class="card-header-bar">
+                                <span>SYS_STATUS: ONLINE</span>
+                                <div class="card-status-lights">
+                                    <span class="status-dot red"></span>
+                                    <span class="status-dot yellow"></span>
+                                    <span class="status-dot green"></span>
+                                </div>
+                            </div>
+
+                            <!-- Pixel Photo Frame Display -->
+                            <div class="pixel-photo-container">
+                                <img src="profile.jpg" alt="Sindhu M portrait in pixel frame">
+                                <span class="pixel-photo-badge">⚡ SINDHU M</span>
+                            </div>
+
+                            <div class="pixel-code-snippet">
+                                &gt; ROLE: EEE + SWE<br>
+                                &gt; STACK: PYTHON, JAVA, WEB<br>
+                                &gt; STATUS: READY TO BUILD_
+                            </div>
+
+                            <!-- Mini Stats Grid -->
+                            <div class="pixel-stats-bar">
+                                <div class="stat-box">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">Dedication</span>
+                                </div>
+                                <div class="stat-box">
+                                    <span class="stat-number">&infin;</span>
+                                    <span class="stat-label">Learning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 2. About Me Section (Integrated with Sindhu M's Profile & Photo)
+                 ================================================================== -->
+            <section id="about" aria-labelledby="about-title">
+                <h2 id="about-title">
+                    <span>👤</span> About Me
+                </h2>
+
+                <div class="about-profile-layout">
+                    <!-- About Me Photo Card -->
+                    <div class="about-photo-frame">
+                        <img src="profile.jpg" alt="Sindhu M - Electrical & Electronic Engineer">
+                    </div>
+
+                    <!-- Bio Narrative -->
+                    <div class="about-bio-card">
+                        <p>
+                            Hi, I’m <strong>Sindhu M</strong>, a passionate Electrical and Electronic Engineer and
+                            aspiring developer. I am an engineering student interested in <strong>Python</strong>,
+                            <strong>Java</strong>, <strong>web development</strong>, and <strong>software
+                                engineering</strong>.
+                        </p>
+                        <p>
+                            I enjoy learning new technologies and building simple, useful projects that help me improve
+                            my programming and problem-solving skills.
+                        </p>
+                        <p>
+                            My goal is to become a skilled Electrical and Electronics engineer and create creative,
+                            efficient, and user-friendly applications. I am continuously improving my technical
+                            knowledge through coding practice, projects, and hands-on learning.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Career Highlights -->
+                <div class="highlights-container">
+                    <h3 class="section-subheading">Career Highlights</h3>
+                    <div class="highlight-cards-grid">
+                        <div class="highlight-card">
+                            <span class="highlight-icon" aria-hidden="true">🎓</span>
+                            <span>Engineering student with an interest in software development</span>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="highlight-icon" aria-hidden="true">💻</span>
+                            <span>Learning and developing projects using Python and Java</span>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="highlight-icon" aria-hidden="true">🌐</span>
+                            <span>Exploring HTML, CSS, JavaScript, and web development</span>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="highlight-icon" aria-hidden="true">🚀</span>
+                            <span>Building projects to strengthen programming and problem-solving skills</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Interests -->
+                <div class="interests-container">
+                    <h3 class="section-subheading">Personal Interests</h3>
+                    <div class="interests-grid">
+                        <span class="interest-chip">💻 Coding & Learning New Tech</span>
+                        <span class="interest-chip">🎨 Building Creative Projects</span>
+                        <span class="interest-chip">🌐 Exploring Web Development</span>
+                        <span class="interest-chip">🧩 Improving Problem-Solving Skills</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 3. Professional Skills Section (Pixel-Art Theme)
+                 Organized into: Programming Languages, Frontend, Database, Tools
+                 ================================================================== -->
+            <section id="skills" aria-labelledby="skills-title">
+                <h2 id="skills-title">
+                    <span>⚡</span> Technical Skills & Proficiency
+                </h2>
+
+                <p class="skills-section-intro">
+                    Demonstrating core technical competencies across programming, modern frontend development, database
+                    systems, and essential developer tooling.
+                </p>
+
+                <div class="skills-main-grid">
+
+                    <!-- ----------------------------------------------------------
+                         Category 1: Programming Languages
+                         Skills: Python, Java, JavaScript
+                         ---------------------------------------------------------- -->
+                    <div class="skill-category-panel">
+                        <div class="skill-panel-header">
+                            <h3 class="skill-panel-title">
+                                <span>⌨</span> Programming Languages
+                            </h3>
+                            <span class="skill-panel-count">3 SKILLS</span>
+                        </div>
+
+                        <div class="skill-items-list">
+
+                            <!-- Skill Card: Python - Icon, Proficiency Level (Proficient), Animated Progress Bar (85%) -->
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <div class="skill-name-wrap">
+                                        <div class="skill-pixel-icon" aria-hidden="true">
+                                            <!-- Pixel Python Icon -->
+                                            <svg viewBox="0 0 16 16">
+                                                <path
+                                                    d="M7 1h2v2h4v4H9V5H5v2H2V3h4V1h1zm2 14H7v-2H3V9h4v2h4V9h3v4h-4v2h-1z" />
+                                            </svg>
+                                        </div>
+                                        <span class="skill-name">Python</span>
+                                    </div>
+                                    <span class="skill-badge-level">Proficient</span>
+                                </div>
+                                <div class="pixel-progress-wrap">
+                                    <div class="pixel-progress-track" role="progressbar" aria-label="Python Proficiency"
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="pixel-progress-fill" data-progress="85%" style="width: 0%;"></div>
+                                    </div>
+                                    <span class="skill-percentage-text">85%</span>
+                                </div>
+                            </div>
+
+                            <!-- Skill Card: Java - Icon, Proficiency Level (Proficient), Animated Progress Bar (80%) -->
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <div class="skill-name-wrap">
+                                        <div class="skill-pixel-icon" aria-hidden="true">
+                                            <!-- Pixel Java Coffee Cup Icon -->
+                                            <svg viewBox="0 0 16 16">
+                                                <path
+                                                    d="M3 4h8v7H3V4zm9 2h2v3h-2V6zM2 13h11v1H2v-1zM5 1h1v2H5V1zm3 0h1v2H8V1z" />
+                                            </svg>
+                                        </div>
+                                        <span class="skill-name">Java</span>
+                                    </div>
+                                    <span class="skill-badge-level">Proficient</span>
+                                </div>
+                                <div class="pixel-progress-wrap">
+                                    <div class="pixel-progress-track" role="progressbar" aria-label="Java Proficiency"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="pixel-progress-fill" data-progress="80%" style="width: 0%;"></div>
+                                    </div>
+                                    <span class="skill-percentage-text">80%</span>
+                                </div>
+                            </div>
+
+                            <!-- Skill Card: JavaScript - Icon, Proficiency Level (Intermediate), Animated Progress Bar (75%) -->
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <div class="skill-name-wrap">
+                                        <div class="skill-pixel-icon" aria-hidden="true">
+                                            <!-- Pixel JavaScript [JS] Icon -->
+                                            <svg viewBox="0 0 16 16">
+                                                <path
+                                                    d="M2 2h12v12H2V2zm3 4h2v5H5v-1h1V7H5V6zm4 0h3v2h-2v1h2v3H9V9h2V8H9V6z" />
+                                            </svg>
+                                        </div>
+                                        <span class="skill-name">JavaScript</span>
+                                    </div>
+                                    <span class="skill-badge-level">Intermediate</span>
+                                </div>
+                                <div class="pixel-progress-wrap">
+                                    <div class="pixel-progress-track" role="progressbar"
+                                        aria-label="JavaScript Proficiency" aria-valuenow="75" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                        <div class="pixel-progress-fill" data-progress="75%" style="width: 0%;"></div>
+                                    </div>
+                                    <span class="skill-percentage-text">75%</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ----------------------------------------------------------
+                         Category 2: Frontend Development
+                         Skills: HTML, CSS
+                         ---------------------------------------------------------- -->
+                    <div class="skill-category-panel">
+                        <div class="skill-panel-header">
+                            <h3 class="skill-panel-title">
+                                <span>🌐</span> Frontend Development
+                            </h3>
+                            <span class="skill-panel-count">2 SKILLS</span>
+                        </div>
+
+                        <div class="skill-items-list">
+
+                            <!-- Skill Card: HTML - Icon, Proficiency Level (Advanced), Animated Progress Bar (90%) -->
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <div class="skill-name-wrap">
+                                        <div class="skill-pixel-icon" aria-hidden="true">
+                                            <!-- Pixel Code Tag / HTML Icon -->
+                                            <svg viewBox="0 0 16 16">
+                                                <path d="M5 4L2 8l3 4V9h3V7H5V4zm6 0v3H8v2h3v3l3-4-3-4z" />
+                                            </svg>
+                                        </div>
+                                        <span class="skill-name">HTML</span>
+                                    </div>
+                                    <span class="skill-badge-level">Advanced</span>
+                                </div>
+                                <div class="pixel-progress-wrap">
+                                    <div class="pixel-progress-track" role="progressbar" aria-label="HTML Proficiency"
+                                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="pixel-progress-fill" data-progress="90%" style="width: 0%;"></div>
+                                    </div>
+                                    <span class="skill-percentage-text">90%</span>
+                                </div>
+                            </div>
+
+                            <!-- Skill Card: CSS - Icon, Proficiency Level (Proficient), Animated Progress Bar (85%) -->
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <div class="skill-name-wrap">
+                                        <div class="skill-pixel-icon" aria-hidden="true">
+                                            <!-- Pixel CSS Palette / Style Icon -->
+                                            <svg viewBox="0 0 16 16">
+                                                <path
+                                                    d="M2 2h12l-1 11-5 2-5-2L2 2zm3 3l.3 3h5.4l-.2 2.5-2.5.7-2.5-.7-.1-1.5H3.8l.2 3 4 1.1 4-1.1.6-6H5z" />
+                                            </svg>
+                                        </div>
+                                        <span class="skill-name">CSS</span>
+                                    </div>
+                                    <span class="skill-badge-level">Proficient</span>
+                                </div>
+                                <div class="pixel-progress-wrap">
+                                    <div class="pixel-progress-track" role="progressbar" aria-label="CSS Proficiency"
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="pixel-progress-fill" data-progress="85%" style="width: 0%;"></div>
+                                    </div>
+                                    <span class="skill-percentage-text">85%</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ----------------------------------------------------------
+                         Category 3: Database Systems
+                         Skills: MySQL
+                         ---------------------------------------------------------- -->
+                    <div class="skill-category-panel">
+                        <div class="skill-panel-header">
+                            <h3 class="skill-panel-title">
+                                <span>🗄</span> Database Systems
+                            </h3>
+                            <span class="skill-panel-count">1 SKILL</span>
+                        </div>
+
+                        <div class="skill-items-list">
+
+                            <!-- Skill Card: MySQL - Icon, Proficiency Level (Intermediate), Animated Progress Bar (75%) -->
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <div class="skill-name-wrap">
+                                        <div class="skill-pixel-icon" aria-hidden="true">
+                                            <!-- Pixel Database Stack Icon -->
+                                            <svg viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 1C4 1 2 2.5 2 4s2 3 6 3 6-1.5 6-3-2-3-6-3zm-6 5v3c0 1.5 2 3 6 3s6-1.5 6-3V6c-1.5 1.2-3.8 2-6 2s-4.5-.8-6-2zm0 5v3c0 1.5 2 3 6 3s6-1.5 6-3v-3c-1.5 1.2-3.8 2-6 2s-4.5-.8-6-2z" />
+                                            </svg>
+                                        </div>
+                                        <span class="skill-name">MySQL</span>
+                                    </div>
+                                    <span class="skill-badge-level">Intermediate</span>
+                                </div>
+                                <div class="pixel-progress-wrap">
+                                    <div class="pixel-progress-track" role="progressbar" aria-label="MySQL Proficiency"
+                                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="pixel-progress-fill" data-progress="75%" style="width: 0%;"></div>
+                                    </div>
+                                    <span class="skill-percentage-text">75%</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ----------------------------------------------------------
+                         Category 4: Developer Tools
+                         Skills: Git, GitHub, VS Code
+                         ---------------------------------------------------------- -->
+                    <div class="skill-category-panel">
+                        <div class="skill-panel-header">
+                            <h3 class="skill-panel-title">
+                                <span>🛠</span> Developer Tools
+                            </h3>
+                            <span class="skill-panel-count">3 SKILLS</span>
+                        </div>
+
+                        <div class="skill-items-list">
+
+                            <!-- Skill Card: Git - Icon, Proficiency Level (Proficient), Animated Progress Bar (80%) -->
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <div class="skill-name-wrap">
+                                        <div class="skill-pixel-icon" aria-hidden="true">
+                                            <!-- Pixel Git Branch Icon -->
+                                            <svg viewBox="0 0 16 16">
+                                                <path
+                                                    d="M12 2a2 2 0 10-1.4 3.4L8 8v3.2a2 2 0 102 0V9.4l2.6-2.6A2 2 0 0012 2zM4 6a2 2 0 100 4 2 2 0 000-4z" />
+                                            </svg>
+                                        </div>
+                                        <span class="skill-name">Git</span>
+                                    </div>
+                                    <span class="skill-badge-level">Proficient</span>
+                                </div>
+                                <div class="pixel-progress-wrap">
+                                    <div class="pixel-progress-track" role="progressbar" aria-label="Git Proficiency"
+                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="pixel-progress-fill" data-progress="80%" style="width: 0%;"></div>
+                                    </div>
+                                    <span class="skill-percentage-text">80%</span>
+                                </div>
+                            </div>
+
+                            <!-- Skill Card: GitHub - Icon, Proficiency Level (Proficient), Animated Progress Bar (85%) -->
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <div class="skill-name-wrap">
+                                        <div class="skill-pixel-icon" aria-hidden="true">
+                                            <!-- Pixel GitHub Octocat/Repo Icon -->
+                                            <svg viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 1a7 7 0 00-2.2 13.6c.3.1.5-.1.5-.3v-1.3c-2 .4-2.4-.8-2.4-.8-.3-.8-.8-1-.8-1-.6-.4 0-.4 0-.4.7.1 1.1.7 1.1.7.6 1.1 1.6.8 2 .6.1-.5.3-.8.5-1-1.6-.2-3.3-.8-3.3-3.6 0-.8.3-1.5.8-2-.1-.2-.3-.9.1-1.9 0 0 .6-.2 2 .7a7 7 0 013.7 0c1.4-.9 2-.7 2-.7.4 1 .2 1.7.1 1.9.5.5.8 1.2.8 2 0 2.8-1.7 3.4-3.3 3.6.3.3.6.8.6 1.6v2.3c0 .2.2.4.5.3A7 7 0 008 1z" />
+                                            </svg>
+                                        </div>
+                                        <span class="skill-name">GitHub</span>
+                                    </div>
+                                    <span class="skill-badge-level">Proficient</span>
+                                </div>
+                                <div class="pixel-progress-wrap">
+                                    <div class="pixel-progress-track" role="progressbar" aria-label="GitHub Proficiency"
+                                        aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="pixel-progress-fill" data-progress="85%" style="width: 0%;"></div>
+                                    </div>
+                                    <span class="skill-percentage-text">85%</span>
+                                </div>
+                            </div>
+
+                            <!-- Skill Card: VS Code - Icon, Proficiency Level (Advanced), Animated Progress Bar (90%) -->
+                            <div class="skill-card">
+                                <div class="skill-card-top">
+                                    <div class="skill-name-wrap">
+                                        <div class="skill-pixel-icon" aria-hidden="true">
+                                            <!-- Pixel VS Code / Editor Icon -->
+                                            <svg viewBox="0 0 16 16">
+                                                <path
+                                                    d="M11 1L6 5 3 2 1 3v10l2 1 3-3 5 4 4-2V3l-4-2zm0 4.2L7.6 8 11 10.8V5.2z" />
+                                            </svg>
+                                        </div>
+                                        <span class="skill-name">VS Code</span>
+                                    </div>
+                                    <span class="skill-badge-level">Advanced</span>
+                                </div>
+                                <div class="pixel-progress-wrap">
+                                    <div class="pixel-progress-track" role="progressbar"
+                                        aria-label="VS Code Proficiency" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                        <div class="pixel-progress-fill" data-progress="90%" style="width: 0%;"></div>
+                                    </div>
+                                    <span class="skill-percentage-text">90%</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 4. "My Journey" Timeline Section (Pixel-Art Theme)
+                 ================================================================== -->
+            <section id="timeline" aria-labelledby="timeline-title">
+                <h2 id="timeline-title">
+                    <span>⏳</span> My Journey
+                </h2>
+
+                <p class="skills-section-intro">
+                    A chronological overview of my engineering milestones, skill evolution, and software development
+                    journey.
+                </p>
+
+                <!-- Vertical Pixel-Art Timeline Container -->
+                <div class="journey-timeline-wrapper">
+                    <!-- Central Vertical Glow Spine -->
+                    <div class="journey-timeline-track" aria-hidden="true"></div>
+
+                    <ol class="journey-timeline-list">
+
+                        <!-- Event 1: 2024 - Engineering Journey -->
+                        <li class="journey-timeline-item">
+                            <div class="journey-timeline-node" aria-hidden="true">🎓</div>
+                            <div class="journey-card">
+                                <div class="journey-card-header">
+                                    <div class="journey-title-wrap">
+                                        <span class="journey-card-title">Engineering Journey</span>
+                                    </div>
+                                    <span class="journey-year-tag">2024</span>
+                                </div>
+                                <p class="journey-card-desc">
+                                    Started my engineering studies and began building a strong foundation in technical
+                                    subjects, electrical principles, and analytical problem-solving.
+                                </p>
+                            </div>
+                        </li>
+
+                        <!-- Event 2: 2025 - Programming & Development -->
+                        <li class="journey-timeline-item">
+                            <div class="journey-timeline-node" aria-hidden="true">💻</div>
+                            <div class="journey-card">
+                                <div class="journey-card-header">
+                                    <div class="journey-title-wrap">
+                                        <span class="journey-card-title">Programming & Development</span>
+                                    </div>
+                                    <span class="journey-year-tag">2025</span>
+                                </div>
+                                <p class="journey-card-desc">
+                                    Started focusing on core programming concepts, learning Python, Java, HTML, CSS, and
+                                    JavaScript to build solid software fundamentals.
+                                </p>
+                            </div>
+                        </li>
+
+                        <!-- Event 3: 2026 - Software Development Skills -->
+                        <li class="journey-timeline-item">
+                            <div class="journey-timeline-node" aria-hidden="true">🚀</div>
+                            <div class="journey-card">
+                                <div class="journey-card-header">
+                                    <div class="journey-title-wrap">
+                                        <span class="journey-card-title">Software Development Skills</span>
+                                    </div>
+                                    <span class="journey-year-tag">2026</span>
+                                </div>
+                                <p class="journey-card-desc">
+                                    Continued improving programming skills through structured coding assignments,
+                                    algorithmic challenges, and hands-on software development.
+                                </p>
+                            </div>
+                        </li>
+
+                        <!-- Event 4: 2026 - Web Development -->
+                        <li class="journey-timeline-item">
+                            <div class="journey-timeline-node" aria-hidden="true">🌐</div>
+                            <div class="journey-card">
+                                <div class="journey-card-header">
+                                    <div class="journey-title-wrap">
+                                        <span class="journey-card-title">Web Development</span>
+                                    </div>
+                                    <span class="journey-year-tag">2026</span>
+                                </div>
+                                <p class="journey-card-desc">
+                                    Started creating portfolio websites and exploring modern web development, responsive
+                                    UI design, accessibility, and interactive design systems.
+                                </p>
+                            </div>
+                        </li>
+
+                        <!-- Event 5: 2026 - Projects & Learning -->
+                        <li class="journey-timeline-item">
+                            <div class="journey-timeline-node" aria-hidden="true">🛠️</div>
+                            <div class="journey-card">
+                                <div class="journey-card-header">
+                                    <div class="journey-title-wrap">
+                                        <span class="journey-card-title">Projects & Learning</span>
+                                    </div>
+                                    <span class="journey-year-tag">2026</span>
+                                </div>
+                                <p class="journey-card-desc">
+                                    Worked on programming projects and practiced solving coding problems to strengthen
+                                    logical thinking and full-stack development skills.
+                                </p>
+                            </div>
+                        </li>
+
+                        <!-- Event 6: Future Goal - Electrical & Electronics Engineer / Software Developer -->
+                        <li class="journey-timeline-item">
+                            <div class="journey-timeline-node" aria-hidden="true">🎯</div>
+                            <div class="journey-card goal-card">
+                                <div class="journey-card-header">
+                                    <div class="journey-title-wrap">
+                                        <span class="journey-card-title">Future Goal – Software & EEE Engineer</span>
+                                    </div>
+                                    <span class="journey-year-tag">FUTURE GOAL</span>
+                                </div>
+                                <p class="journey-card-desc">
+                                    Aim to become a skilled Electrical and Electronics Engineer and create creative,
+                                    efficient, and user-friendly software applications that solve real-world problems.
+                                </p>
+                            </div>
+                        </li>
+
+                    </ol>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 5. Projects Section
+                 ================================================================== -->
+            <section id="projects" aria-labelledby="projects-title">
+                <h2 id="projects-title">
+                    <span>💼</span> Featured Projects
+                </h2>
+
+                <article class="project-card">
+                    <h3>Python & Java Application Demonstrations</h3>
+                    <p>Building practical tools and utilities to strengthen object-oriented programming, data
+                        structures, and algorithm design.</p>
+                    <p><strong>Tech Stack:</strong> Python, Java, Data Structures</p>
+                    <div class="project-links">
+                        <a href="#projects" class="project-link-btn">Demo</a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                            class="project-link-btn">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <h3>Modern Pixel-Art Web Portfolio</h3>
+                    <p>A responsive, accessible personal portfolio website built with semantic HTML5, CSS custom
+                        properties, and dark mode support.</p>
+                    <p><strong>Tech Stack:</strong> HTML5, CSS3, JavaScript</p>
+                    <div class="project-links">
+                        <a href="#hero" class="project-link-btn">View Live</a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                            class="project-link-btn">Source Code</a>
+                    </div>
+                </article>
+            </section>
+
+            <!-- ==================================================================
+                 6. Testimonials Section
+                 ================================================================== -->
+            <section id="testimonials" aria-labelledby="testimonials-title">
+                <h2 id="testimonials-title">
+                    <span>💬</span> Testimonials & Endorsements
+                </h2>
+                <div class="testimonial-card">
+                    <p>"Sindhu demonstrates a strong passion for combining electrical engineering foundations with
+                        modern software development."</p>
+                    <cite>— Academic & Peer Review</cite>
+                </div>
+            </section>
+
+            <!-- ==================================================================
+                 7. Chat / AI Assistant Section
+                 ================================================================== -->
+            <section id="chat" aria-labelledby="chat-title">
+                <h2 id="chat-title">
+                    <span>💭</span> Interactive Inquiries / Chat
+                </h2>
+                <p>Have questions about engineering projects or collaboration opportunities? Send a quick query below or
+                    use the contact form.</p>
+            </section>
+
+            <!-- ==================================================================
+                 8. Contact Section
+                 ================================================================== -->
+            <section id="contact" aria-labelledby="contact-title">
+                <h2 id="contact-title">
+                    <span>✉</span> Contact Me
+                </h2>
+                <p>Feel free to reach out for collaborations, project discussions, or engineering opportunities.</p>
+
+                <form action="#" method="post">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message here..."
+                            required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+
+        </main>
+
+        <!-- ======================================================================
+             Footer
+             ====================================================================== -->
+        <footer>
+            <p>&copy; 2026 Sindhu M - Electrical & Electronic Engineer & Aspiring Developer. All rights reserved.</p>
+            <ul>
+                <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            </ul>
+        </footer>
+    </div>
+
+    <!-- ==========================================================================
+         Navigation, Theme & Skills Progress Animation JavaScript
+         ========================================================================== -->
+    <script>
+        // ----------------------------------------------------------------------
+        // 1. Dark/Night Mode Theme Switcher
+        // ----------------------------------------------------------------------
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const themeText = document.getElementById('theme-text');
+
+        const storedTheme = localStorage.getItem('portfolio-theme');
+        const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+        function applyTheme(theme) {
+            document.documentElement.setAttribute('data-theme', theme);
+            if (theme === 'dark') {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'DAY MODE';
+            } else {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'NIGHT MODE';
+            }
+        }
+
+        if (storedTheme) {
+            applyTheme(storedTheme);
+        } else if (systemPrefersDark.matches) {
+            applyTheme('dark');
+        } else {
+            applyTheme('light');
+        }
+
+        if (themeToggleBtn) {
+            themeToggleBtn.addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme') || (systemPrefersDark.matches ? 'dark' : 'light');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                applyTheme(newTheme);
+                localStorage.setItem('portfolio-theme', newTheme);
+            });
+        }
+
+        systemPrefersDark.addEventListener('change', (e) => {
+            if (!localStorage.getItem('portfolio-theme')) {
+                applyTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+
+        // ----------------------------------------------------------------------
+        // 2. Active Navigation Highlight on Scroll & Click
+        // ----------------------------------------------------------------------
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('main section');
+
+        function setActiveNav() {
+            let currentSectionId = '';
+            const scrollPosition = window.scrollY + 180;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                link.removeAttribute('aria-current');
+                if (currentSectionId && link.getAttribute('href') === `#${currentSectionId}`) {
+                    link.classList.add('active');
+                    link.setAttribute('aria-current', 'page');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', setActiveNav, { passive: true });
+
+        // ----------------------------------------------------------------------
+        // 3. Mobile Navigation Drawer Toggle
+        // ----------------------------------------------------------------------
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const sidebarNavbar = document.getElementById('sidebar-navbar');
+        const mobileOverlay = document.getElementById('mobile-overlay');
+
+        function toggleMobileMenu() {
+            const isOpen = sidebarNavbar.classList.toggle('open');
+            mobileOverlay.classList.toggle('active', isOpen);
+            mobileMenuToggle.setAttribute('aria-expanded', isOpen);
+        }
+
+        function closeMobileMenu() {
+            sidebarNavbar.classList.remove('open');
+            mobileOverlay.classList.remove('active');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        }
+
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+        }
+        if (mobileOverlay) {
+            mobileOverlay.addEventListener('click', closeMobileMenu);
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 992) {
+                    closeMobileMenu();
+                }
+            });
+        });
+
+        // ----------------------------------------------------------------------
+        // 4. Smooth Animation for Skill Progress Bars on Viewport Entry
+        // ----------------------------------------------------------------------
+        const skillFills = document.querySelectorAll('.pixel-progress-fill');
+        const skillsSection = document.getElementById('skills');
+
+        if ('IntersectionObserver' in window && skillsSection) {
+            const observer = new IntersectionObserver((entries, obs) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        skillFills.forEach(fill => {
+                            const progress = fill.getAttribute('data-progress');
+                            if (progress) {
+                                fill.style.width = progress;
+                            }
+                        });
+                        obs.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            observer.observe(skillsSection);
+        } else {
+            skillFills.forEach(fill => {
+                const progress = fill.getAttribute('data-progress');
+                if (progress) fill.style.width = progress;
+            });
+        }
+    </script>
+</body>
+
+</html>
